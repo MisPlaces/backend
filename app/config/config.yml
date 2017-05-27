@@ -133,6 +133,8 @@ easy_admin:
                    - { property: 'id' }
                    - { property: 'categoria' }
                    - { property: 'nombre' }
+                   - { property: 'latitud' }
+                   - { property: 'longitud' }
                    - { property: 'imageName', label: 'Img. Principal', type: 'image', base_path: '%app.path.lugar_image%' }
 
             form:
