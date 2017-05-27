@@ -115,6 +115,7 @@ easy_admin:
             - Persona
             - Categoria
             - Lugar
+            - Recomendacion
     entities:
         Persona:
             class: AppBundle\Entity\Persona
