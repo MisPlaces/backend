@@ -8,7 +8,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: es
-    app.path.lugar_image: /uploads/images/lugar
+    app.path.lugar_image: ./uploads/images/lugar
     app.path.lugar_personas_images: /uploads/images/lugar/personas
 
 framework:
@@ -130,7 +130,10 @@ easy_admin:
             list:
                 title: "Lugares"
                 fields:
-                   - { property: 'imageName', type: 'image', base_path: '%app.path.lugar_image%' }
+                   - { property: 'id' }
+                   - { property: 'categoria' }
+                   - { property: 'nombre' }
+                   - { property: 'imageName', label: 'Img. Principal', type: 'image', base_path: '%app.path.lugar_image%' }
 
             form:
                 fields:
