@@ -80,6 +80,13 @@ fos_user:
         address: no-reply@site.com.
         sender_name: No Reply Site.com
 
+#doctrine extentions
+stof_doctrine_extensions:
+    orm:
+        default:
+            timestampable: true
+            blameable: true
+
 #VichUpload
 vich_uploader:
     db_driver: orm
@@ -159,3 +166,8 @@ easy_admin:
                    - { property: 'fechaEventoFin' }
                    - { property: 'fechaVisibleDesde' }
                    - { property: 'fechaVisibleHasta' }
+        Recomendacion:
+            class: AppBundle\Entity\Recomendacion
+            label: 'Recomendacion'
+            list:
+                title: "Recomendaciones"
