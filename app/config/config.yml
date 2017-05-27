@@ -172,3 +172,5 @@ easy_admin:
             label: 'Recomendacion'
             list:
                 title: "Recomendaciones"
+            form:
+                fields: ['persona', 'lugar', 'comentario' ,'meGusta', 'activo']
