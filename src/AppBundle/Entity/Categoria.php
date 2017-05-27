@@ -37,7 +37,7 @@ class Categoria extends BaseClass
     private $descripcion;
 
     /**
-     * @ORM\Column(name="icono", type="text", nullable=true)
+     * @ORM\Column(name="icono", type="string", length=128, nullable=true)
      *
      */
     private $icono;

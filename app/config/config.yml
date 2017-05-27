@@ -97,7 +97,7 @@ easy_admin:
             list:
                 title: "Categorías"
             form:
-                fields: ['nombre', 'descripcion', 'categoriaPadre', 'activo']
+                fields: ['nombre', 'descripcion', 'icono' ,'categoriaPadre', 'activo']
         Lugar:
             class: AppBundle\Entity\Lugar
             label: 'Lugares'
