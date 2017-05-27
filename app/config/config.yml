@@ -123,7 +123,15 @@ easy_admin:
             list:
                 title: "Personas"
             form:
-                fields: ['nombre', 'apellido', 'sexo', 'telefonoPrincipal', 'telefonoSecundario','cargo','usuario','activo']
+                fields:
+                    - { property: 'nombre' }
+                    - { property: 'apellido' }
+                    - { property: 'sexo', type: 'choice', type_options: {choices: {'Masculino':'M', 'Femenino':'F'}} }
+                    - { property: 'telefonoPrincipal' }
+                    - { property: 'telefonoSecundario' }
+                    - { property: 'cargo' }
+                    - { property: 'usuario' }
+                    - { property: 'activo' }
 
         Categoria:
             class: AppBundle\Entity\Categoria
