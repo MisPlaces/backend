@@ -1,10 +1,17 @@
-usuario:
-    resource: "@UsuarioBundle/Resources/config/routing.yml"
+# usuario:
+#     resource: "@UsuarioBundle/Resources/config/routing.yml"
+#     prefix:   /
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/"
+    type:     annotation
     prefix:   /
 
-app:
-    resource: "@AppBundle/Resources/config/routing.yml"
-    prefix:  /
+# app:
+#     resource: "@AppBundle/Resources/config/routing.yml"
+#     prefix:  /
+
+
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
