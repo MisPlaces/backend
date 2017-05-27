@@ -36,12 +36,18 @@ class Categoria extends BaseClass
      */
     private $descripcion;
 
+    /**
+     * @ORM\Column(name="icono", type="text", nullable=true)
+     *
+     */
+    private $icono;
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categoria")
      * @ORM\JoinColumn(name="categoria_padre_id", referencedColumnName="id", nullable=true)
      */
     private $categoriaPadre;
+
 
 
     /**
@@ -100,6 +106,30 @@ class Categoria extends BaseClass
     public function getDescripcion()
     {
         return $this->descripcion;
+    }
+    
+    /**
+     * Set icono
+     *
+     * @param string $icono
+     *
+     * @return Categoria
+     */
+    public function setIcono($icono)
+    {
+        $this->icono = $icono;
+
+        return $this;
+    }
+
+    /**
+     * Get icono
+     *
+     * @return string
+     */
+    public function getIcono()
+    {
+        return $this->icono;
     }
 
     /**
