@@ -8,6 +8,8 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: es
+    app.path.lugar_image: /uploads/images/lugar
+    app.path.lugar_personas_images: /uploads/images/lugar/personas
 
 framework:
     #esi: ~
@@ -77,6 +79,19 @@ fos_user:
     from_email:
         address: no-reply@site.com.
         sender_name: No Reply Site.com
+
+#VichUpload
+vich_uploader:
+    db_driver: orm
+    mappings:
+        lugar_image:
+            uri_prefix:         %app.path.lugar_image%
+            upload_destination: %kernel.root_dir%/../web/uploads/images/lugar
+            namer:              vich_uploader.namer_origname
+        lugar_personas_images:
+            uri_prefix:         %app.path.lugar_personas_images%
+            upload_destination: %kernel.root_dir%/../web/uploads/images/lugar/personas
+            namer:              vich_uploader.namer_origname
 
 easy_admin:
     site_name: MisPlaces
