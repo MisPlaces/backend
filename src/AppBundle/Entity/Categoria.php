@@ -38,7 +38,7 @@ class Categoria extends BaseClass
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categoria", inversedBy="categoriaPadre")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categoria")
      * @ORM\JoinColumn(name="categoria_padre_id", referencedColumnName="id", nullable=true)
      */
     private $categoriaPadre;
@@ -180,5 +180,11 @@ class Categoria extends BaseClass
         $this->actualizadoPor = $actualizadoPor;
 
         return $this;
+    }
+
+
+    public function __toString()
+    {
+        return $this->getNombre();
     }
 }

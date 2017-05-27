@@ -81,10 +81,25 @@ fos_user:
 easy_admin:
     site_name: 'MisPlaces'
     design:
-        brand_color: '#F4A610'
+        brand_color: '#007FFF'
     entities:
         Persona:
             class: AppBundle\Entity\Persona
             label: 'Personas'
             list:
                 title: "Personas"
+            form:
+                fields: ['nombre', 'apellido', 'sexo', 'telefonoPrincipal', 'telefonoSecundario','cargo','usuario','activo']
+
+        Categoria:
+            class: AppBundle\Entity\Categoria
+            label: 'Categorías'
+            list:
+                title: "Categorías"
+            form:
+                fields: ['nombre', 'descripcion', 'categoriaPadre', 'activo']
+        Lugar:
+            class: AppBundle\Entity\Lugar
+            label: 'Lugares'
+            list:
+                title: "Lugares"
