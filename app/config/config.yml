@@ -130,7 +130,7 @@ easy_admin:
                     - { property: 'telefonoPrincipal' }
                     - { property: 'telefonoSecundario' }
                     - { property: 'cargo' }
-                    - { property: 'usuario' }
+                    - { property: 'usuario', type: 'UsuarioBundle\Form\UsuarioType', type_options: { required: true } }
                     - { property: 'activo' }
 
         Categoria:
