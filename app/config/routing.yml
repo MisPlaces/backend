@@ -7,9 +7,9 @@ easy_admin_bundle:
     type:     annotation
     prefix:   /
 
-# app:
-#     resource: "@AppBundle/Resources/config/routing.yml"
-#     prefix:  /
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:  /
 
 
 

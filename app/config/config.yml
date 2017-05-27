@@ -100,6 +100,9 @@ easy_admin:
         menu:
             - { label: 'Estadisticas' }
             - { label: 'Generales', route: 'app_estadisticas' }
+            - { label: 'Históricos', route: 'app_estadisticas_historicos' }
+            - { label: 'Tiempo Real', route: 'app_estadisticas_tiempo_real' }
+
             # - Category
             - { label: 'Administración' }
             - Persona
@@ -126,5 +129,28 @@ easy_admin:
             label: 'Lugares'
             list:
                 title: "Lugares"
+                fields:
+                   - { property: 'imageName', type: 'image', base_path: '%app.path.lugar_image%' }
+
             form:
-                fields: ['categoria','nombre', 'resumen', 'cuerpo','tipo','direccion','latitud','longitud','telefono','celular','email','facebook','twitter','instagram','youtube','fechaEventoInicio','fechaEventoFin','fechaVisibleDesde','fechaVisibleHasta']
+                fields:
+                   - { property: 'categoria' }
+                   - { property: 'nombre' }
+                   - { property: 'resumen' }
+                   - { property: 'cuerpo' }
+                   - { property: 'imageFile', type: 'vich_image' }
+                   - { property: 'tipo' }
+                   - { property: 'direccion' }
+                   - { property: 'latitud' }
+                   - { property: 'longitud' }
+                   - { property: 'telefono' }
+                   - { property: 'celular' }
+                   - { property: 'email' }
+                   - { property: 'facebook' }
+                   - { property: 'twitter' }
+                   - { property: 'instagram' }
+                   - { property: 'youtube' }
+                   - { property: 'fechaEventoInicio' }
+                   - { property: 'fechaEventoFin' }
+                   - { property: 'fechaVisibleDesde' }
+                   - { property: 'fechaVisibleHasta' }
