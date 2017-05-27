@@ -82,6 +82,14 @@ easy_admin:
     site_name: MisPlaces
     design:
         brand_color: '#007FFF'
+        menu:
+            - { label: 'Estadisticas' }
+            - { label: 'Generales', route: 'app_estadisticas' }
+            # - Category
+            - { label: 'Administración' }
+            - Persona
+            - Categoria
+            - Lugar
     entities:
         Persona:
             class: AppBundle\Entity\Persona
