@@ -105,17 +105,35 @@ easy_admin:
     design:
         brand_color: '#007FFF'
         menu:
+            - { label: 'Marketing' }
+            - { label: 'Mis campañas', url: '#' , icon: 'shopping-bag'}
+            - { label: 'Clientes', url: '#' , icon: 'users'}
+            - { label: 'Reservas' }
+            - { label: 'Últimas Reservas', url: '#', icon: 'plane'}
+            - { label: 'Itinerarios' }
+            - { label: 'Listados', url: '#' , icon: 'map-o'}
             - { label: 'Estadisticas' }
-            - { label: 'Generales', route: 'app_estadisticas' }
-            - { label: 'Históricos', route: 'app_estadisticas_historicos' }
-            - { label: 'Tiempo Real', route: 'app_estadisticas_tiempo_real' }
-
+            - { label: 'Generales', route: 'app_estadisticas' , icon: 'line-chart'}
+            - { label: 'Históricos', route: 'app_estadisticas_historicos' , icon: 'area-chart'}
+            - { label: 'Tiempo Real', route: 'app_estadisticas_tiempo_real' , icon: 'signal'}
+            - { label: 'App Externas' }
+            - { label: 'Conexión con Booking' , url: '#', icon: 'book'}
+            - { label: 'Conexión con Google' , url: '#', icon: 'google'}
+            - { label: 'Conexión con Facebook Events' , url: '#', icon: 'facebook-square'}
+            - { label: 'Conexión con Forsquare' , url: '#', icon: 'foursquare'}
+            - { label: 'Conexión con tripadvisor' , url: '#', icon: 'tripadvisor'}
+            - { label: 'ML Engine' }
+            - { label: 'Mejores lugares para invertir',url:'#' , icon: 'globe'}
+            - { label: 'Lugares que más se van a visitar',url:'#', icon: 'map-marker' }
+            - { label: '' }
             # - Category
             - { label: 'Administración' }
             - Persona
             - Categoria
             - Lugar
             - Recomendacion
+            - { label: 'Tags' , url: '#'}
+
     entities:
         Persona:
             class: AppBundle\Entity\Persona
